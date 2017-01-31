@@ -1,0 +1,153 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+.botaoMenuLateral{
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    display: block;
+    font-size: 20px;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        z-index: 10000;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #DDDDDD;
+        border-right: 1px solid #eee;
+        width: 15%;
+        margin-left: 40px;
+    }
+
+    .botaoMenuLateral{
+        display: none;
+    }
+}
+
+/* Navbar */
+
+.navbar-style{
+    background-color: white;
+    border: 4px solid; 
+    border-color: transparent;
+    border-bottom-color: #1A7387;
+}
+
+.btn-login-style{
+    background-color: transparent; 
+    border-color: #1A7387; 
+    padding-left: 50px; 
+    padding-right: 50px; 
+    color: #1A7387;
+}
+
+/* Sidebar navigation */
+
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* Orakolo */
+.orakolo-logo{
+    width: 150%;
+    height: 70px;
+    margin-top: 20px;
+    background: white;
+    position: relative;
+    right: 20px;
+}
+
+.iframe:focus { 
+    outline: none;
+}
+
+.iframe[seamless] { 
+    display: block;
+}
